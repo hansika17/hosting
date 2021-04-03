@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.switch-field {
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #e4e4e4;
+  color: rgba(0, 0, 0, 0.6);
+  
+  
+
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  
+  
+}
+
+.switch-field label {
+  
+  line-height: 1;
+  text-align: center;
+  padding: 8px 8px;
+  margin-right: -1px;
+  transition: all 0.1s ease-in-out;
+  width: full;
+
+ 
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+ 
+  
+  border-radius: 20px;
+  background-color: white;
+  border-color: cadetblue;
+  border-width: 2px;
+}
+
+.switch-field label:first-of-type {
+  border-radius: none;
+ 
+}
+
+.switch-field label:last-of-type {
+  border-radius: none;
+
+}
+
+/* This is just for CodePen. */
+
+.form {
+  max-width: 600px;
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font-weight: normal;
+  line-height: 1.625;
+  margin: 8px auto;
+  padding: 16px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+
+
